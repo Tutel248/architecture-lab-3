@@ -1,36 +1,33 @@
-import { StripeClient, type StripePayload } from "./internal/StripeClient.ts";
-import type { PaymentRequest, PaymentResult, PaymentStatus } from "./types.ts";
+import type { PaymentRequest, PaymentResult } from "./types.ts";
+import type { IPaymentProvider } from "./adapters/IPaymentProvider.ts";
+import { StripeAdapter } from "./adapters/StripeAdapter.ts";
+import { LocalPayAdapter } from "./adapters/LocalPayAdapter.ts";
 
 export class PaymentsService {
-    private readonly stripe: StripeClient;
+    private readonly providers: Map<string, IPaymentProvider>;
 
-    constructor(stripe = new StripeClient()) {
-        this.stripe = stripe;
+    constructor(customProviders?: IPaymentProvider[]) {
+        this.providers = new Map();
+        const defaultProviders = customProviders ?? [new StripeAdapter(), new LocalPayAdapter()];
+        for (const p of defaultProviders) {
+            this.providers.set(p.name, p);
+        }
     }
 
     async processPayment(request: PaymentRequest): Promise<PaymentResult> {
-        const payload: StripePayload = {
-            id: request.paymentToken,
-            amount: Math.round(request.amount * 100),
-            currency: request.currency,
-            metadata: { orderId: request.orderId },
-        };
+        const providerName = request.provider ?? "stripe";
+        const provider = this.providers.get(providerName);
 
-        const response = await this.stripe.createCharge(payload);
-        const status = this.normalizeStatus(response.state);
+        if (!provider) {
+            return {
+                success: false,
+                status: "failed",
+                transactionId: "",
+                provider: providerName,
+                rawStatus: "UNKNOWN_PROVIDER",
+            };
+        }
 
-        return {
-            success: status === "paid" || status === "processing",
-            status,
-            transactionId: response.charge_id,
-            rawStatus: response.state,
-        };
-    }
-
-    normalizeStatus(rawState: string): PaymentStatus {
-        if (rawState === "succeeded") return "paid";
-        if (rawState === "requires_action") return "processing";
-        if (rawState === "declined") return "failed";
-        return "failed";
+        return provider.processPayment(request);
     }
 }

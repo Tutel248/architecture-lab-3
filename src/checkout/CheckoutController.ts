@@ -7,6 +7,7 @@ export type CheckoutRequest = {
     paymentToken: string;
     currency: string;
     lines: CartLine[];
+    provider?: string;
 };
 
 export class CheckoutController {
@@ -30,7 +31,8 @@ export class CheckoutController {
             request.lines,
             total,
             request.paymentToken,
-            request.currency
+            request.currency,
+            request.provider
         );
 
         return {

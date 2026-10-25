@@ -5,11 +5,13 @@ export type PaymentRequest = {
     paymentToken: string;
     amount: number;
     currency: string;
+    provider?: string;
 };
 
 export type PaymentResult = {
     success: boolean;
     status: PaymentStatus;
     transactionId: string;
+    provider?: string;
     rawStatus?: string;
 };

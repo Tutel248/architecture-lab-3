@@ -20,7 +20,8 @@ export class OrderService {
         lines: CartLine[],
         total: number,
         paymentToken: string,
-        currency: string
+        currency: string,
+        provider = "stripe"
     ) {
         await this.inventory.reserve(lines);
 
@@ -31,6 +32,7 @@ export class OrderService {
             paymentToken,
             amount: total,
             currency,
+            provider,
         });
 
         const order = database.orders.get(orderId)!;
