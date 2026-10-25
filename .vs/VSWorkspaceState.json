@@ -1,7 +1,15 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\src",
+    "\\src\\checkout",
+    "\\src\\notifications",
+    "\\src\\orders",
+    "\\src\\payments",
+    "\\src\\payments\\internal",
+    "\\src\\reports",
+    "\\tests"
   ],
-  "SelectedNode": "\\C:\\Users\\yuriy\\Source\\Repos\\architecture-lab-3",
+  "SelectedNode": "\\tests\\payments.test.ts",
   "PreviewInSolutionExplorer": false
 }

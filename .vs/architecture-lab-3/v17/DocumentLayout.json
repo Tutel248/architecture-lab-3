@@ -1,7 +1,44 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\yuriy\\source\\repos\\architecture-lab-3\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\yuriy\\source\\repos\\architecture-lab-3\\tests\\payments.test.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:tests\\payments.test.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\yuriy\\source\\repos\\architecture-lab-3\\tsconfig.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:tsconfig.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\yuriy\\source\\repos\\architecture-lab-3\\DECISIONS.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DECISIONS.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\yuriy\\source\\repos\\architecture-lab-3\\src\\payments\\PaymentsService.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\payments\\PaymentsService.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\yuriy\\source\\repos\\architecture-lab-3\\src\\checkout\\CheckoutController.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\checkout\\CheckoutController.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\yuriy\\source\\repos\\architecture-lab-3\\src\\orders\\OrderService.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\orders\\OrderService.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\yuriy\\source\\repos\\architecture-lab-3\\src\\payments\\internal\\StripeClient.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\payments\\internal\\StripeClient.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\yuriy\\source\\repos\\architecture-lab-3\\src\\payments\\types.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\payments\\types.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\yuriy\\source\\repos\\architecture-lab-3\\REVIEW.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:REVIEW.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -18,6 +55,127 @@
             {
               "$type": "Bookmark",
               "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "tsconfig.json",
+              "DocumentMoniker": "C:\\Users\\yuriy\\source\\repos\\architecture-lab-3\\tsconfig.json",
+              "RelativeDocumentMoniker": "tsconfig.json",
+              "ToolTip": "C:\\Users\\yuriy\\source\\repos\\architecture-lab-3\\tsconfig.json",
+              "RelativeToolTip": "tsconfig.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-10-25T14:48:40.891Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DECISIONS.md",
+              "DocumentMoniker": "C:\\Users\\yuriy\\source\\repos\\architecture-lab-3\\DECISIONS.md",
+              "RelativeDocumentMoniker": "DECISIONS.md",
+              "ToolTip": "C:\\Users\\yuriy\\source\\repos\\architecture-lab-3\\DECISIONS.md",
+              "RelativeToolTip": "DECISIONS.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAB4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-10-25T14:44:31.304Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "payments.test.ts",
+              "DocumentMoniker": "C:\\Users\\yuriy\\source\\repos\\architecture-lab-3\\tests\\payments.test.ts",
+              "RelativeDocumentMoniker": "tests\\payments.test.ts",
+              "ToolTip": "C:\\Users\\yuriy\\source\\repos\\architecture-lab-3\\tests\\payments.test.ts",
+              "RelativeToolTip": "tests\\payments.test.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2026-10-25T14:44:11.352Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PaymentsService.ts",
+              "DocumentMoniker": "C:\\Users\\yuriy\\source\\repos\\architecture-lab-3\\src\\payments\\PaymentsService.ts",
+              "RelativeDocumentMoniker": "src\\payments\\PaymentsService.ts",
+              "ToolTip": "C:\\Users\\yuriy\\source\\repos\\architecture-lab-3\\src\\payments\\PaymentsService.ts",
+              "RelativeToolTip": "src\\payments\\PaymentsService.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2026-10-25T14:43:00.205Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CheckoutController.ts",
+              "DocumentMoniker": "C:\\Users\\yuriy\\source\\repos\\architecture-lab-3\\src\\checkout\\CheckoutController.ts",
+              "RelativeDocumentMoniker": "src\\checkout\\CheckoutController.ts",
+              "ToolTip": "C:\\Users\\yuriy\\source\\repos\\architecture-lab-3\\src\\checkout\\CheckoutController.ts",
+              "RelativeToolTip": "src\\checkout\\CheckoutController.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2026-10-25T14:43:52.392Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OrderService.ts",
+              "DocumentMoniker": "C:\\Users\\yuriy\\source\\repos\\architecture-lab-3\\src\\orders\\OrderService.ts",
+              "RelativeDocumentMoniker": "src\\orders\\OrderService.ts",
+              "ToolTip": "C:\\Users\\yuriy\\source\\repos\\architecture-lab-3\\src\\orders\\OrderService.ts",
+              "RelativeToolTip": "src\\orders\\OrderService.ts",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwDQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2026-10-25T14:43:34.85Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "StripeClient.ts",
+              "DocumentMoniker": "C:\\Users\\yuriy\\source\\repos\\architecture-lab-3\\src\\payments\\internal\\StripeClient.ts",
+              "RelativeDocumentMoniker": "src\\payments\\internal\\StripeClient.ts",
+              "ToolTip": "C:\\Users\\yuriy\\source\\repos\\architecture-lab-3\\src\\payments\\internal\\StripeClient.ts",
+              "RelativeToolTip": "src\\payments\\internal\\StripeClient.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2026-10-25T14:42:36.729Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "types.ts",
+              "DocumentMoniker": "C:\\Users\\yuriy\\source\\repos\\architecture-lab-3\\src\\payments\\types.ts",
+              "RelativeDocumentMoniker": "src\\payments\\types.ts",
+              "ToolTip": "C:\\Users\\yuriy\\source\\repos\\architecture-lab-3\\src\\payments\\types.ts",
+              "RelativeToolTip": "src\\payments\\types.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2026-10-25T14:42:10.045Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "REVIEW.md",
+              "DocumentMoniker": "C:\\Users\\yuriy\\source\\repos\\architecture-lab-3\\REVIEW.md",
+              "RelativeDocumentMoniker": "REVIEW.md",
+              "ToolTip": "C:\\Users\\yuriy\\source\\repos\\architecture-lab-3\\REVIEW.md",
+              "RelativeToolTip": "REVIEW.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-10-25T14:35:28.221Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
