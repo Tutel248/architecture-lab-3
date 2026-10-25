@@ -35,6 +35,11 @@
 - `src/database.ts`
 - `src/config.ts`
 
-## Actual impact (заповнити після реалізації)
+## Actual impact
 
-*(Буде заповнено після завершення рефакторингу)*
+**Actual files changed:**
+- Створено: `src/inventory/InventoryService.ts`, `tests/inventory.test.ts`, `tests/calculateTotal.test.ts`.
+- Змінено: `src/shared/calculateTotal.ts`, `src/orders/OrderService.ts`, `src/checkout/CheckoutController.ts`, `src/payments/internal/StripeClient.ts`, `DECISIONS.md`, `REVIEW.md`.
+
+**Difference from prediction and explanation:**
+Фактичні зміни повністю збіглися з прогнозом. Створення `InventoryService` дозволило локалізувати контроль залишків усередині модуля `Inventory`, а видалення виклику `markOrderPaid` із `StripeClient` повністю усунуло циклічну залежність між `Orders` та `Payments`.

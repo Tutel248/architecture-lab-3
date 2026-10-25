@@ -35,3 +35,39 @@
 **Trade-off:** Процеси виконання замовлень повинні обробляти тимчасовий стан очікування перед остаточним підтвердженням.
 
 **Verification:** Інтеграційний тест перевіряє, що токен `proc_` успішно переводить замовлення у стан `payment_pending`.
+
+## Decision 3: Inventory Stock Ownership and Atomic Reservation
+
+**Problem:** `OrderService` напряму читав і оновлював `database.stock`, ігноруючи правила `Inventory` та створюючи ризик від'ємних залишків.
+
+**Evidence:** `src/orders/OrderService.ts:16-26` робив запити `database.stock.get` та оновлював `database.stock` безпосередньо.
+
+**Decision:** Реалізували `InventoryService.reserve(lines)`, який контролює інваріанти залишків (`available >= 0`) та гарантує атомарне резервування.
+
+**Why:** Повертає власність над даними модулю `Inventory`, гарантує `available >= 0` і запобігає псуванню залишків.
+
+**Alternative:** Додавання циклу скасування (Rollback) усередині `OrderService` для відновлення знятих товарів при помилці.
+
+**Why rejected:** Розміщення логіки скасування в `OrderService` порушує ownership та дублює складські правила.
+
+**Trade-off:** `InventoryService` повинен виконувати попередню перевірку всіх позицій кошика перед списанням залишків.
+
+**Verification:** Юніт-тести перевіряють, що спроба замовити відсутній товар викликає помилку та залишає залишки незмінними.
+
+## Decision 4: Elimination of Orders-Payments Circular Dependency
+
+**Problem:** `StripeClient` імпортував `markOrderPaid`, що створювало циклічну залежність та витоки логіки оновлення замовлення у платежі.
+
+**Evidence:** `src/payments/internal/StripeClient.ts:2` імпортував `markOrderPaid` із файлу `../../orders/internal/orderMutations.ts`.
+
+**Decision:** Видалили виклики `markOrderPaid` із `Payments`. `PaymentsService` синхронно повертає DTO `PaymentResult` для оновлення стану в `OrderService`.
+
+**Why:** Формує односпрямований граф залежностей (`Checkout` -> `Orders` -> `Payments`), повністю усуваючи циклічні імпорти.
+
+**Alternative:** Використання Event Emitter усередині `StripeClient` для надсилання події про завершення платежу.
+
+**Why rejected:** Подієві зворотні виклики у синхронному чекауті додають зайву складність та приховують потік виконання.
+
+**Trade-off:** `OrderService` повинен явно обробляти оновлення статусів замовлення на основі отриманого DTO `PaymentResult`.
+
+**Verification:** Тест підтверджує відсутність циклів та імпортів із `orders/internal`.

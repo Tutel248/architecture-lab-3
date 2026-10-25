@@ -1,5 +1,6 @@
 import { calculateTotal, type CartLine } from "../shared/calculateTotal.ts";
 import { OrderService } from "../orders/OrderService.ts";
+import { auditLog, runtimeConfig } from "../config.ts";
 
 export type CheckoutRequest = {
     orderId: string;
@@ -16,7 +17,13 @@ export class CheckoutController {
     }
 
     async checkout(request: CheckoutRequest) {
-        const total = calculateTotal(request.lines);
+        const total = calculateTotal(
+            request.lines,
+            runtimeConfig.taxRate,
+            runtimeConfig.discountPercent
+        );
+
+        auditLog.push(`total_calculated:${total}`);
 
         const order = await this.orders.placeOrder(
             request.orderId,
